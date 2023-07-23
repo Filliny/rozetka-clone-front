@@ -33,7 +33,7 @@
       <AppPagination
         :total-pages='total_pages'
         :current-page='page'
-        @input='(val) => {page = val}' />
+        @update='(val) => {page = val}' />
     </div>
     <div v-else class='container-create'>
       <h2>Товари</h2>
@@ -574,6 +574,10 @@ export default {
     display: flex;
     align-items: center;
     margin-right: 20px;
+  }
+
+  div:last-child {
+    margin-right: 0;
   }
 }
 

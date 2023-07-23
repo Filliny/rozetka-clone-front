@@ -70,6 +70,16 @@ export default {
           routes: '/dashboard',
         },
         {
+          icon: dashboardIcon,
+          name: 'Користувачі',
+          routes: '/users',
+        },
+        {
+          icon: dashboardIcon,
+          name: 'Ролі користувачів',
+          routes: '/users-roles',
+        },
+        {
           icon: catalogIcon,
           name: 'Каталог',
           routes: [
@@ -96,6 +106,20 @@ export default {
             {
               route: '/manufacturers',
               name: 'Виробники',
+            },
+          ],
+        },
+        {
+          icon: dashboardIcon,
+          name: 'Склад',
+          routes: [
+            {
+              route: '/storage/refill_list',
+              name: 'Товари на поповнення',
+            },
+            {
+              route: '/storage/closed_list',
+              name: 'Завершені замовлення',
             },
           ],
         },
